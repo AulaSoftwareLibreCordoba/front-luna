@@ -1,0 +1,20 @@
+{
+  "name": "tema",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.3",
+    "@astrojs/node": "^8.3.2",
+    "astro": "^4.12.2",
+    "firebase": "^10.12.4",
+    "firebase-admin": "^12.3.0",
+    "typescript": "^5.5.4"
+  }
+}
