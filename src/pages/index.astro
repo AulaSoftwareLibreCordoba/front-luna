@@ -20,7 +20,8 @@ async function checkSessionAndRedirect() {
 
 ---
 
-<Layout title="Iniciar sesión">
+<Layout title="Luna - Inicia sesión">
+
   <div style="text-align: center;">
     <Hero title="Inicio Sesión" tagline=" " />
     <p>¿Eres nuevo aquí? <a href="/register">Crear una cuenta</a></p>
@@ -32,12 +33,17 @@ async function checkSessionAndRedirect() {
         <p>
           <input type="password" name="password" id="password" class="input-form" placeholder="Contraseña" />
         </p>
-        <button type="submit" class="btn">Iniciar sesión</button>
+        <div class="grid mx-auto w-32 gap-2 font-bold ">
+          <button type="submit" class="bg-purple-700 p-2 rounded-lg hover:bg-purple-900 transition-colors duration-300">Iniciar sesión</button>
+          <button id="google" class="bg-purple-700 p-2 rounded-lg hover:bg-purple-900 transition-colors duration-300">
+            Iniciar sesión con Google
+          </button>
+        </div>
       </form>
     </div>
     
-    <button id="google" class="btn">Iniciar sesión con Google</button>
-    <button id="apple" class="btn">Iniciar sesión con Apple</button>
+
+
   </div>
 </Layout>
 
