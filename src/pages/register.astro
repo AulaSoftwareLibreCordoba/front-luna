@@ -7,7 +7,7 @@ import Hero from "../components/Hero.astro";
   <div>
     <Hero title="Registro" tagline=" " />
     <div style="text-align: center;">
-      <p>¿Ya tienes una cuenta? <a href="/signin">Iniciar sesión</a></p>
+      <p>¿Ya tienes una cuenta? <a class="hover:text-fuchsia-300 hover:underline" href="/">Iniciar sesión</a></p>
 
       <form action="/api/auth/register" method="post">
         <p>
@@ -19,7 +19,8 @@ import Hero from "../components/Hero.astro";
         <p>
           <input type="password" name="password" id="password" class="input-form" placeholder="Contraseña"/>
         </p>
-        <button type="submit" class="btn">Registrarse</button>
+        <button type="submit" class="ext-white font-bold bg-gradient-to-b from-violet-950 to-transparent p-2 rounded-lg
+        hover:bg-purple-900 transition-colors duration-300 border-[1px] border-violet-900">Registrarse</button>
 
       </form>
     </div>
