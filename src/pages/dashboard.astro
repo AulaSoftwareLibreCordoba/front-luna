@@ -25,14 +25,18 @@ if (!user) {
 
 <Layout title="Luna - Inicio">
   <div class="mx-auto">
-    <Hero title="Bienvenido,"><h1>{user?.displayName || 'Usuario'}</h1></Hero>
+    <Hero title="Bienvenido,"><h1 class="text-3xl">{user?.displayName || 'Usuario'}</h1></Hero>
     <br>
     <hr class="w-[70%] mx-auto">
     <br>
     <p class="text-center">Nos alegra verte aquí</p>
     <form action="/api/auth/signout" method="GET" class="text-center pt-5">
-      <button class="ext-white font-bold bg-gradient-to-b from-violet-950 to-transparent p-2 rounded-lg
-        hover:bg-purple-900 transition-colors duration-300 border-[1px] border-violet-900">Cerrar sesión</button>
+      <button class="text-white font-bold bg-gradient-to-b from-violet-950 to-transparent p-2 rounded-lg
+        hover:bg-purple-900 transition-colors duration-300 border-[1px] border-violet-900">
+
+          Cerrar sesión
+
+      </button>
     </form>
   </div>
 
