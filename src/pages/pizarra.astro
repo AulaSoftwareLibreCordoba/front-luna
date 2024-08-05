@@ -3,6 +3,7 @@ import { app } from "../firebase/server";
 import { getAuth } from "firebase-admin/auth";
 import Layout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import Pizarracomponent from "../components/pizarra";
 
 const auth = getAuth(app);
 
@@ -24,6 +25,11 @@ if (!user) {
 ---
 
 <Layout title="Luna - Pizarra">
-  <Hero title="Pizarra" tagline="Aquí aparecerán los anuncios y novedades." />
+  <div class="">
+    <Hero title="Pizarra"/>
 
+    <hr class="w-[30%] mx-auto mt-3">
+
+    <Pizarracomponent/>
+  </div>
 </Layout>

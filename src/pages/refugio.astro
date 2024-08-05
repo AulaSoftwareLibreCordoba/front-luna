@@ -3,6 +3,7 @@ import { app } from "../firebase/server";
 import { getAuth } from "firebase-admin/auth";
 import Layout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import Denuncias from "../components/Denuncias" 
 
 const auth = getAuth(app);
 
@@ -25,5 +26,5 @@ if (!user) {
 
 <Layout title="Luna - Mi refugio">
   <Hero title="¿Quiere realizar una denuncia?" tagline="Responda el formulario y nuestro equipo se pondra en contacto contigo." />
-
+  <Denuncias></Denuncias>
 </Layout>
