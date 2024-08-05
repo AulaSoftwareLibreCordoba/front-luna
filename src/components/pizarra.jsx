@@ -30,8 +30,8 @@ const Pizarracomponent = () => {
 
     return (
         <div>
-            <div className=' p-4 w-9/12 bordes mx-auto border rounded-xl border-purple-400'>
-                    <div className='  p-3 pizarra overflow-hidden overflow-y-scroll h-80 grid border rounded-xl border-purple-400 bg-transparent'>
+            <div className=' w-[42%] h-[50%] mx-auto border rounded-xl border-violet-900 mt-14'>
+                    <div className=' p-3 pizarra overflow-hidden overflow-y-scroll h-[34rem] grid border-[20px] rounded-xl border-violet-950 bg-transparent'>
                     {cardsData.map(card => (
                         <Cards key={card.id} text={card.text} />
                     ))}

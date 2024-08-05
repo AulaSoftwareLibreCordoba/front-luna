@@ -1,7 +1,6 @@
 .post-it {
     width: 200px;
     height: 200px;
-    background-color: #ffeb3b;
     position: relative;
     padding: 10px;
     margin: 20px;
@@ -11,14 +10,14 @@
     justify-content: center;
     align-items: center;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: white;
     font-size: 16px;
   }
   
   .pin {
     width: 14px;
     height: 14px;
-    background-color: red;
+    background-color: white;
     border-radius: 50%;
     position: absolute;
     top: -7px;
@@ -34,7 +33,7 @@
     background: none;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: white;
     overflow: hidden;
     display: flex;
     justify-content: center;
