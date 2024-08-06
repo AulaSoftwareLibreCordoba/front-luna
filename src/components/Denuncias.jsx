@@ -32,7 +32,7 @@ const FormComponent = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-14 w-11/12 max-w-screen-lg mx-auto p-6 bg-white bg-opacity-5 border-2 border-gray-300 shadow-md rounded-lg backdrop-blur-md"
+      className="mt-4 w-auto md:w-[50%] max-w-screen-lg mx-auto p-6 bg-white bg-opacity-5 border-2 border-gray-300 shadow-md rounded-lg backdrop-blur-md"
     >
       <div className="mb-6">
         <label
@@ -93,7 +93,7 @@ const FormComponent = () => {
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
+          className="flex font-bold bg-gradient-to-b from-violet-950 to-transparent p-4 rounded-lg hover:bg-purple-900 text-white transition-colors duration-300 border-[1px] border-violet-900"
         >
           Enviar
         </button>
