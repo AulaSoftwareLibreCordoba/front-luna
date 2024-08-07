@@ -17,11 +17,11 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 ];
 ---
 
-<nav class="bg-gradient-to-b from-violet-950 to-transparent">
+<nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
+		<a href="/" class="site-title ">
 			<Icon icon="moon-stars" color="var(--accent-regular)" size="1.6em" gradient />
-			LUNA
+			
 		</a>
 		<menu-button>
 			<template>
@@ -174,7 +174,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		gap: 0.5rem;
 		align-items: center;
 		line-height: 1.1;
-		color: var(--gray-0);
+		/* color: var(--gray-0); */
 		text-decoration: none;
 	}
 
@@ -186,8 +186,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		padding: 0.5rem;
 		font-size: 1.5rem;
 		color: var(--gray-300);
-		background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-		box-shadow: var(--shadow-md);
 	}
 
 	.menu-button[aria-expanded='true'] {
@@ -225,7 +223,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		list-style: none;
 		padding: 2rem;
 		background-color: var(--gray-999);
-		border-bottom: 1px solid var(--gray-800);
 	}
 
 	.link {
@@ -248,7 +245,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		padding: 1.5rem 2rem 1.5rem 1.5rem;
 		background-color: var(--gray-999);
 		border-radius: 0 0 0.75rem 0.75rem;
-		box-shadow: var(--shadow-lg);
 	}
 
 	.socials {
@@ -306,7 +302,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			border: 0;
 			padding: 0.5rem 0.5625rem;
 			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-			box-shadow: var(--shadow-md);
 		}
 
 		.nav-items::before {
