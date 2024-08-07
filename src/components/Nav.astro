@@ -5,9 +5,9 @@ import type { iconPaths } from './IconPaths';
 
 /** Apartados navbar */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Inicio', href: '/dashboard/' },
-	{ label: 'Mi Refugio', href: '/refugio/' },
-	{ label: 'Pizarra', href: '/pizarra/' },
+	{ label: 'INICIO', href: '/dashboard/' },
+	{ label: 'MI REFUGIO', href: '/refugio/' },
+	{ label: 'PIZARRA', href: '/pizarra/' },
 ];
 
 /** Iconos linkeados a redes sociales */
@@ -71,11 +71,11 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</div>
 	</noscript>
 	<div id="menu-content" hidden>
-		<ul class="nav-items">
+		<ul class="grid place-content-center pt-10 md:pt-0 text-center bg-black md:flex gap-10  ">
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
-						<a
+						<a class="navbar__link relative cursor-pointer font-bold"
 							aria-current={Astro.url.pathname === href}
 							class:list={[
 								'link',
@@ -104,12 +104,12 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					))
 				}
 			</div>
-			<div class="flex items-center gap-7">
+			<div class="flex items-center gap-20">
 				<div class="theme-toggle">
 					<ThemeToggle />
 				</div>
 				<form action="/api/auth/signout" method="GET" class="text-center">
-					<button class="navbar__link relative cursor-pointer font-bold text-[#686a6e] ">CERRAR SESIÓN</button>
+					<button class="navbar__link relative cursor-pointer font-bold">CERRAR SESIÓN</button>
 				</form>
 			</div>
 		</div>
@@ -219,7 +219,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		line-height: 1.2;
 		list-style: none;
 		padding: 2rem;
-		background-color: var(--gray-999);
 	}
 
 	.link {
@@ -310,7 +309,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 		.link {
 			padding: 0.5rem 1rem;
-			border-radius: 999rem;
 			transition:
 				color var(--theme-transition),
 				background-color var(--theme-transition);
@@ -324,7 +322,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 		.link.active {
 			color: var(--accent-text-over);
-			background-color: var(--accent-regular);
+			background-color: var(--accent-subtle-overlay);
 		}
 
 		.menu-footer {
