@@ -30,22 +30,22 @@ const Pizarracomponent = () => {
 
     return (
         <div>
-            <div className=' w-[42%] h-[50%] mx-auto border rounded-xl border-violet-900 mt-14'>
-                    <div className=' p-3 pizarra overflow-hidden overflow-y-scroll h-[34rem] grid border-[20px] rounded-xl border-violet-950 bg-transparent'>
+            <div className='xl:w-[60%] md:w-[90%] h-[50%] mx-auto border rounded-xl border-violet-900 mt-14'>
+                    <div className=' p-3 pizarra justify-center overflow-hidden overflow-y-scroll h-[34rem] grid border-[20px] rounded-xl border-violet-950 bg-transparent'>
                     {cardsData.map(card => (
                         <Cards key={card.id} text={card.text} />
                     ))}
-                    <div className='flex justify-center'>
+                    <div className='md:flex justify-center'>
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
                     </div>
-                    <div className='flex justify-center'>
+                    <div className='md:flex justify-center'>
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
                     </div>
-                    <div className='flex justify-center'>
+                    <div className='md:flex justify-center'>
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
                         <Cards id={1} text={'hola mundo'} />
