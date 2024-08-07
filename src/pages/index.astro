@@ -24,8 +24,8 @@ async function checkSessionAndRedirect() {
 
   <div style="text-align: center;">
     <Hero title="Inicio de Sesión"/>
-    <hr class="w-1/3 mx-auto">
-    <p>¿Eres nuevo aquí? <a class="hover:text-fuchsia-300 hover:underline" href="/register">Crear una cuenta</a></p>
+    <hr class="w-1/3 mx-auto border-violet-600 pb-3">
+    <p>¿Eres nuevo aquí? <a class="hover:text-fuchsia-400 transition-all duration-300 hover:underline" href="/register">Crear una cuenta</a></p>
     <div style="margin:5%" class="md:m-20 ">
       <form class="grid w-[165px] mx-auto justify-center gap-3" action="/api/auth/signin" method="post">
           <input type="email" name="email" id="email" class="input-form" placeholder="Correo electrónico" autocomplete="off"/>

@@ -34,13 +34,14 @@ const { title, description } = Astro.props;
 <style>
 	:root {
 		.backgrounds{
-			background-color: rgb(228, 228, 228);
+			background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
 		}
 	}
 
 	:root.theme-dark {
 		.backgrounds{
-			background-color: rgb(12, 13, 21);
+			background: -webkit-linear-gradient(90deg, #090f30,#000000,#190631);
+			background: linear-gradient(90deg, #090f30,#000000,#190631);
 		}
 	}
 

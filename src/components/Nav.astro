@@ -104,14 +104,14 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					))
 				}
 			</div>
-
-			<div class="theme-toggle">
-				<ThemeToggle />
+			<div class="flex items-center gap-7">
+				<div class="theme-toggle">
+					<ThemeToggle />
+				</div>
+				<form action="/api/auth/signout" method="GET" class="text-center">
+					<button class="navbar__link relative cursor-pointer font-bold text-[#686a6e] ">CERRAR SESIÓN</button>
+				</form>
 			</div>
-			<form action="/api/auth/signout" method="GET" class="text-center">
-				<button class="font-bold bg-gradient-to-b from-violet-950 to-transparent p-2 rounded-lg
-        hover:bg-purple-900 text-white transition-colors duration-300 border-[1px] border-violet-900">Cerrar sesión</button>
-			</form>
 		</div>
 	</div>
 </nav>
@@ -354,4 +354,35 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			color: SelectedItem;
 		}
 	}
+
+	.navbar__link:hover {
+		color: #515151;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+
+  .navbar__link:after {
+    position: absolute;
+    content: "";
+    background-color: #b122f3;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    scale: 0;
+    transform-origin: left;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+
+  .navbar__link:hover::after {
+    scale: 1;
+  }
+
 </style>
