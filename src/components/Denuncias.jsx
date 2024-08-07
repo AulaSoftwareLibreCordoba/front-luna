@@ -32,12 +32,12 @@ const FormComponent = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-4 w-auto md:w-[50%] max-w-screen-lg mx-auto p-6 bg-white bg-opacity-5 border-2 border-gray-300 shadow-md rounded-lg backdrop-blur-md"
+      className="mt-4 w-auto md:w-[50%] max-w-screen-lg mx-auto p-6 bg-white bg-opacity-5 border-2 border-violet-500 shadow-md rounded-lg backdrop-blur-md"
     >
       <div className="mb-6">
         <label
           htmlFor="name"
-          className="block text-gray-700 font-bold text-xl mb-2"
+          className="block text-gray-500 font-bold text-xl mb-2"
         >
           Denunciantes
         </label>
@@ -45,7 +45,7 @@ const FormComponent = () => {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-3 bg-transparent border-2 border-white rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg placeholder-gray-400"
+          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg placeholder-gray-400"
           rows="2"
           placeholder="Escribe tu nombre aquí"
         ></textarea>
@@ -53,7 +53,7 @@ const FormComponent = () => {
       <div className="mb-6">
         <label
           htmlFor="class"
-          className="block text-gray-700 font-bold text-xl mb-2"
+          className="block text-gray-500 font-bold text-xl mb-2"
         >
           Clase
         </label>
@@ -61,7 +61,7 @@ const FormComponent = () => {
           id="class"
           value={selectedClass}
           onChange={(e) => setSelectedClass(e.target.value)}
-          className="w-full p-3 bg-transparent border-2 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
+          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
         >
           <option value="" disabled>
             Selecciona una clase
@@ -71,10 +71,33 @@ const FormComponent = () => {
           <option value="clase3">Clase 3</option>
         </select>
       </div>
+      <div>
+        <div>
+          <label for="birthdate" className="block text-gray-500 font-bold text-xl mb-2">Fecha de los hechos</label>
+          <input id="birthdate" type="date" min="1900-01-01" max="2100-01-01" class="datepicker rounded-md w-full p-3 bg-transparent border-2 mb-3 border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg " name="fecha_nacimiento" required/>
+      </div>
+      </div>
+      <div className="mb-6">
+        <label htmlFor="class" className="block text-gray-500 font-bold text-xl mb-2"> Letra </label>
+        <select
+          id="letra"
+          value={selectedClass}
+          onChange={(e) => setSelectedClass(e.target.value)}
+          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
+        >
+          <option value="" disabled>
+            Selecciona la letra de la clase
+          </option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
       <div className="mb-6">
         <label
           htmlFor="reason"
-          className="block text-gray-700 font-bold text-xl mb-2"
+          className="block text-gray-500 font-bold text-xl mb-2"
         >
           Motivo
         </label>
@@ -82,7 +105,7 @@ const FormComponent = () => {
           id="reason"
           value={reason}
           onChange={handleReasonChange}
-          className="w-full p-3 bg-transparent border-2 border-white rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg placeholder-gray-400"
+          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg placeholder-gray-400"
           rows="5"
           placeholder="Escribe tu motivo aquí"
         ></textarea>
