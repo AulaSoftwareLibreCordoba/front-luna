@@ -268,11 +268,6 @@ h5 {
 	margin: 0.5%;
   }
   
-  .input-form:focus {
-	border-color: var(--accent-regular);
-	box-shadow: 0 0 0 0.2rem var(--accent-overlay);
-  }
-  
   .theme-dark .input-form {
 	background-color: var(--gray-900);
 	border-color: var(--gray-600);
