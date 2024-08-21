@@ -1,1 +1,2 @@
 1-(Fran)--> El botón de iniciar sesion normal, el que no es de googles, no funciona.
+2.(Fran)--> Hay que ajustar bien la navbar y la pizarra porque en tablet no se ve bien (ajustar tamaño)
