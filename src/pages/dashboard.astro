@@ -2,6 +2,7 @@
 import Layout from "../layouts/BaseLayout.astro";
 import { getAuth } from "firebase-admin/auth";
 import { app } from "../firebase/server";
+import Hero from "../components/Hero.astro";
 
 const auth = getAuth(app);
 
@@ -28,8 +29,9 @@ if (!user) {
 ---
 
 <Layout title="Dashboard">
-  <div class="mx-auto">
-    <h1>Welcome, {user.displayName || "User"}!</h1>
+<Hero title="Bienvenido,"/>
+<h1 class="text-xl mx-auto">{user.displayName || "User"}</h1>
+
 
   </div>
   <p class="mx-auto">Your email: {user.email}</p>
