@@ -1,35 +1,36 @@
 ---
-import { app } from "../firebase/server";
-import { getAuth } from "firebase-admin/auth";
 import Layout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
+import { getAuth } from "firebase-admin/auth";
+import { app } from "../firebase/server";
 
 const auth = getAuth(app);
 
-/* Verificar la sesión actual */
+// Verificar la sesión actual
 const sessionCookie = Astro.cookies.get("__session");
 if (!sessionCookie) {
-  return Astro.redirect("/signin");
+  return Astro.redirect("/index");
 }
 
 const decodedCookie = await auth.verifySessionCookie(sessionCookie.value);
 let user;
 if (decodedCookie) {
-  user = await auth.getUser(decodedCookie.uid);
+  try {
+    user = await auth.getUser(decodedCookie.uid);
+  } catch (error) {
+    console.error("Error al obtener el usuario:", error);
+    return Astro.redirect("/signin");
+  }
 }
 
 if (!user) {
-  return Astro.redirect("/dashboard");
+  return Astro.redirect("/signin");
 }
 ---
 
-<Layout title="Luna - Inicio">
+<Layout title="Dashboard">
   <div class="mx-auto">
-    <Hero title="Bienvenido,"><h1 class="text-3xl">{user?.displayName || 'Usuario'}</h1></Hero>
-    <br>
-    <hr class="w-[70%] mx-auto border-violet-600">
-    <br>
-    <p class="text-center">Nos alegra verte aquí</p>
-  </div>
+    <h1>Welcome, {user.displayName || "User"}!</h1>
 
+  </div>
+  <p class="mx-auto">Your email: {user.email}</p>
 </Layout>
