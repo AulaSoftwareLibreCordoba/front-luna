@@ -71,7 +71,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</div>
 	</noscript>
 	<div id="menu-content" hidden>
-		<ul class="grid place-content-center pt-10 md:pt-0 text-center backg md:flex gap-10  ">
+		<ul id="backg" class="grid place-content-center pt-10 md:pt-0 text-center  bg-transparent md:flex gap-10  ">
 			{
 				textLinks.map(({ label, href }) => (
 					<li>

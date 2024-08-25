@@ -83,7 +83,7 @@ const FormComponent = () => {
           id="letra"
           value={selectedClass}
           onChange={(e) => setSelectedClass(e.target.value)}
-          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
+          className="w-full p-3 border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
         >
           <option value="" disabled>
             Selecciona la letra de la clase
