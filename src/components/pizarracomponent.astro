@@ -21,7 +21,7 @@ const response = await fetch('https://api.spacexdata.com/v5/launches/query', {
 
 
 const {docs : launches} = await response.json() as DataAPI ;
-console.log(launches);
+// console.log(launches);
 if (!launches || launches.length === 0) {
     console.error("No recibe ningun dato");
 }
