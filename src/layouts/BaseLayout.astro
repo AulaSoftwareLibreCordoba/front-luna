@@ -37,14 +37,21 @@ const { title, description } = Astro.props;
 		<style>
 			:root {
 				.backgrounds{
-					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
 				}
 				.texto-pizarra{
 					color: black;
 				}	
 
 				.backg {
-					background-color: white;
+					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					border-top:1px solid #b122f3;
+				}
+				.menu-footer{
+					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
 				}
 
 				select {
@@ -107,8 +114,13 @@ const { title, description } = Astro.props;
 					background-color:#18151b;
 					color:#9ca3af;
 				}
-				#backg {
-						background-color: #090b11;
+				.backg {
+					background: -webkit-linear-gradient(90deg, #090f30,#000000,#190631);
+					background: linear-gradient(90deg, #090f30,#000000,#190631);
+				}
+				.menu-footer{
+					background: -webkit-linear-gradient(90deg, #090f30,#000000,#190631);
+					background: linear-gradient(90deg, #090f30,#000000,#190631);
 				}
 
 				@media (min-width: 768px) {
