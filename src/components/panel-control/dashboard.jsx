@@ -17,7 +17,7 @@ function Dashboard() {
         <div className="text-center p-4 text-white bg-[#0f0c29] hover:bg-[#252849] rounded-full w-12 h-12 flex items-center justify-center transition-colors duration-300 ease-in-out">
         <a href="/">
         <div className="p-4 text-white hover:bg-[#252849]  hover:rounded-full cursor-pointer">
-          <FontAwesomeIcon icon={faHome} />
+          <FontAwesomeIcon icon={faHome}/>
         </div>
       </a>
         </div>
