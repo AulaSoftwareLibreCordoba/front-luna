@@ -33,6 +33,7 @@ const FormComponent = () => {
     <form
       onSubmit={handleSubmit}
       className="mt-4 w-auto md:w-[50%] max-w-screen-lg mx-auto p-6 bg-white bg-opacity-5 border-2 border-violet-500 shadow-md rounded-lg backdrop-blur-md"
+      required
     >
       <div className="mb-6">
         <label
@@ -47,7 +48,7 @@ const FormComponent = () => {
           onChange={(e) => setName(e.target.value)}
           className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg placeholder-gray-400"
           rows="2"
-          placeholder="Escribe tu nombre aquí"
+          placeholder="Escribe tu nombre aquí" required
         ></textarea>
       </div>
       <div className="mb-6">
@@ -61,7 +62,7 @@ const FormComponent = () => {
           id="class"
           value={selectedClass}
           onChange={(e) => setSelectedClass(e.target.value)}
-          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
+          className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg" required
         >
           <option value="" disabled>
             Selecciona una clase
@@ -74,7 +75,7 @@ const FormComponent = () => {
       <div>
         <div>
           <label for="birthdate" className="block text-gray-500 font-bold text-xl mb-2">Fecha de los hechos</label>
-          <input id="birthdate" type="date" min="1900-01-01" max="2100-01-01" class="datepicker rounded-md w-full p-3 bg-transparent border-2 mb-3 border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg " name="fecha_nacimiento" required/>
+          <input id="birthdate" type="date"  min="1900-01-01" max="2100-01-01" class="datepicker rounded-md w-full p-3 bg-transparent border-2 mb-3 border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg " name="fecha_nacimiento" required/>
       </div>
       </div>
       <div className="mb-6">
@@ -84,6 +85,7 @@ const FormComponent = () => {
           value={selectedClass}
           onChange={(e) => setSelectedClass(e.target.value)}
           className="w-full p-3 border-2 border-violet-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg"
+          required
         >
           <option value="" disabled>
             Selecciona la letra de la clase
@@ -107,7 +109,7 @@ const FormComponent = () => {
           onChange={handleReasonChange}
           className="w-full p-3 bg-transparent border-2 border-violet-500 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-violet-500 text-lg placeholder-gray-400"
           rows="5"
-          placeholder="Escribe tu motivo aquí"
+          placeholder="Escribe tu motivo aquí" required
         ></textarea>
         <div className="text-right text-gray-500 text-lg">
           {wordCount}/300 palabras
