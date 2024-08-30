@@ -2,29 +2,15 @@
 import Cards from './cards';
 import { type DataAPI  } from "../Types/api";
 
-
-const response = await fetch('http://localhost:8080/dashboardpizarra', {
+const limit = 10;
+const response = await fetch('http://5.196.26.7:8080/dashboardpizarra?limit=' + limit, {
     method: "GET",
     headers: {
         "Content-Type": "application/json",
     },
-    // body: JSON.stringify({
-    //     query: {},
-    //     options:{
-    //         sort: {
-    //             date_unix : "asc"
-    //         },
-    //         limit: 12, 
-    //     },
-    // }),
 });
-
-
 const {content :users} = await response.json() as DataAPI;
 console.log(users);
-// if (!launches || launches.length === 0) {
-//     console.error("No recibe ningun dato");
-// }
 
 ---
 
@@ -32,7 +18,7 @@ console.log(users);
 
 <div>
     <div class='xl:w-[60%] md:w-[90%] h-[50%] p-3 mx-auto border rounded-xl border-violet-900 mt-14'>
-        <div class='p-3 pizarra justify-center overflow-hidden overflow-y-scroll h-[34rem] grid sm:grid-cols-1 md:grid-cols-3 gap-4 border rounded-xl border-violet-950 mx-auto'>
+        <div class='p-5 pizarra justify-center overflow-hidden overflow-y-scroll h-[34rem] grid sm:grid-cols-2 lg:grid xl:flex gap-4 border rounded-xl border-violet-950 mx-auto'>
             {
                 users.map((user) => (
                     user.activo == null ? '' : <Cards id={user.id} text={user.texto || 'Sin detalles'} success={user.activo} nombre={user.nombre} />
