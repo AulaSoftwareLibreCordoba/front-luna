@@ -3,7 +3,7 @@ import Cards from './cards';
 import { type DataAPI  } from "../Types/api";
 
 const limit = 10;
-const response = await fetch('http://5.196.26.7:8080/dashboardpizarra?limit=' + limit, {
+const response = await fetch(`http://5.196.26.7:8080/dashboardpizarra?limit=${limit}`, {
     method: "GET",
     headers: {
         "Content-Type": "application/json",
