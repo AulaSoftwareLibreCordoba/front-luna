@@ -52,7 +52,8 @@ const { title, description } = Astro.props;
 
 				
 				.menu-footer{
-					background: transparent;
+					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
+					background: linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
 				}
 
 				select {
@@ -64,6 +65,10 @@ const { title, description } = Astro.props;
 					.backg {
 						background: transparent;
 						border-top:1px solid transparent;
+					}
+
+					.menu-footer {
+						background: transparent;
 					}
 				}
 
@@ -121,13 +126,17 @@ const { title, description } = Astro.props;
 					background: linear-gradient(90deg, #090f30,#000000,#190631);
 				}
 				.menu-footer{
-					background: transparent;
+					background: -webkit-linear-gradient(90deg, #090f30,#000000,#190631);
+					background: linear-gradient(90deg, #090f30,#000000,#190631);
 				}
 
 				@media (min-width: 768px) {
 						.backg {
 								background: transparent;
 						}
+						.menu-footer {
+						background: transparent;
+					}
 				}
 
 
