@@ -5,7 +5,7 @@ import type { iconPaths } from './IconPaths';
 
 /** Apartados navbar */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'INICIO', href: '/dashboard/' },
+	{ label: 'INICIO', href: '/' },
 	{ label: 'MI REFUGIO', href: '/refugio/' },
 	{ label: 'PIZARRA', href: '/pizarra/' },
 ];
@@ -108,9 +108,9 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 				<div class="theme-toggle">
 					<ThemeToggle />
 				</div>
-				<form action="/api/auth/signout" method="GET" class="text-center">
+				<!-- <form action="" method="GET" class="text-center">
 					<button class="navbar__link relative cursor-pointer font-bold">CERRAR SESIÓN</button>
-				</form>
+				</form> -->
 			</div>
 		</div>
 	</div>
