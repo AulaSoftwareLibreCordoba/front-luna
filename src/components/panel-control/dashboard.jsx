@@ -20,8 +20,8 @@ function Dashboard() {
       <div className="flex flex-col items-center p-4">
         <div className="text-center p-4 text-white bg-[#0f0c29] hover:bg-[#252849] rounded-full w-12 h-12 flex items-center justify-center transition-colors duration-300 ease-in-out">
         <a href="/">
-        <div className="p-4 text-white hover:bg-[#252849]  hover:rounded-full cursor-pointer">
-          <FontAwesomeIcon icon={faHome}/>
+        <div className="text-white hover:bg-[#252849]  hover:rounded-full cursor-pointer">
+          <FontAwesomeIcon icon={faHome} className="size-4"/>
         </div>
       </a>
         </div>
@@ -29,7 +29,7 @@ function Dashboard() {
       <a href="/users">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
           <div className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faUser} className="size-4"/>
             <p>Usuarios</p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Dashboard() {
       <a href="/users">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
         <div className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faPaperclip} />
+            <FontAwesomeIcon icon={faPaperclip} className="size-4" />
             <p>Notas pizarra</p>
           </div>
         </div>

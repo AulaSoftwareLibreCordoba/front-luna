@@ -29,14 +29,14 @@ function User({ nombre, id, email }) {
             id={`${id}`}
             class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#f5935a] via-[#ee7d14] to-[#f36d00] hover:shadow-sm hover:shadow-orange-500 hover:scale-105 duration-300 hover:from-[#eb7a4e] hover:to-[#f0853d]"
           >
-            <FontAwesomeIcon icon={faPencil} />
+            <FontAwesomeIcon icon={faPencil} className="size-4" />
           </button>
         </div>
         <div>
           <button
             class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#fb7185] via-[#e11d48] to-[#be123c] hover:shadow-sm hover:shadow-red-500 hover:scale-105 duration-300 hover:from-[#be123c] hover:to-[#fb7185]"
           >
-            <FontAwesomeIcon icon={faTrash} />
+            <FontAwesomeIcon icon={faTrash} className="size-4"/>
           </button>
         </div>
       </div>
