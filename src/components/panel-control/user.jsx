@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
+
 
 function User({ nombre, id, email }) {
   const backgroundColor = id % 2 === 0 ? "bg-white" : "bg-slate-200";
@@ -30,7 +33,7 @@ function User({ nombre, id, email }) {
           id={`${id}`}
           className="bg-[#f7ac59] border-solid rounded p-4 text-white hover:bg-slate-600 ease-in duration-150"
         >
-          Modificar
+          <FontAwesomeIcon icon={faPencil} />
         </button>
       </div>
     </div>
