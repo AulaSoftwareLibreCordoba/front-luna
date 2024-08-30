@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 function User({ nombre, id, email }) {
@@ -22,19 +23,22 @@ function User({ nombre, id, email }) {
       <div className="flex-1">
         <p>{email}</p>
       </div>
-      <div className="flex-1 space-x-2">
-        {/* <button
-          onClick={onDelete}
-          className="bg-[#ed5464] border-solid rounded p-4 text-white hover:bg-slate-600 ease-in duration-150"
-        >
-          Borrar
-        </button> */}
-        <button
-          id={`${id}`}
-          className="bg-[#f7ac59] border-solid rounded p-4 text-white hover:bg-slate-600 ease-in duration-150"
-        >
-          <FontAwesomeIcon icon={faPencil} />
-        </button>
+      <div className="flex gap-3">
+        <div>
+          <button
+            id={`${id}`}
+            class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#f5935a] via-[#ee7d14] to-[#f36d00] hover:shadow-sm hover:shadow-orange-500 hover:scale-105 duration-300 hover:from-[#eb7a4e] hover:to-[#f0853d]"
+          >
+            <FontAwesomeIcon icon={faPencil} />
+          </button>
+        </div>
+        <div>
+          <button
+            class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#fb7185] via-[#e11d48] to-[#be123c] hover:shadow-sm hover:shadow-red-500 hover:scale-105 duration-300 hover:from-[#be123c] hover:to-[#fb7185]"
+          >
+            <FontAwesomeIcon icon={faTrash} />
+          </button>
+        </div>
       </div>
     </div>
   );

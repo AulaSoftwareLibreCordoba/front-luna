@@ -2,12 +2,20 @@ import User from "./user";
 import "./styles/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Edituser({ nombre, id, email }) {
   return (
-    <div className="flex flex-col bg-[#ffff] w-screen h-screen">
-      <div className="flex flex-row bg-[19a689] p-4 text-center justify-end">
-        <button className="bg-[#19a689] p-4 border-solid rounded mr-[12%] text-white hover:bg-slate-600 ease-in duration-150">
+    <div className="flex flex-col bg-[#ffff] w-screen h-screen justify-between">
+
+      <div className="flex flex-row bg-[19a689] p-4 pb-0 pr-8 text-center justify-end">
+        <div className="mx-auto font-bold text-4xl items-center gap-3 flex">
+          <FontAwesomeIcon icon={faUser} className="text-[#0f0c29]" />
+          <h1 className="text-[#0f0c29] font-bold underline">USUARIOS</h1>
+        </div>
+        <button
+          class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#51df7b] via-[#0bc467] to-[#049c55] hover:shadow-sm hover:shadow-green-400 hover:scale-105 duration-300 hover:from-[#3ebd73] hover:to-[#32d468]"
+        >
           <FontAwesomeIcon icon={faPlus} />
         </button>
       </div>

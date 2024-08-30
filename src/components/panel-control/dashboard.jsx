@@ -3,6 +3,10 @@ import edituser from "./edituser";
 // import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+
 
 function Dashboard() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -24,17 +28,26 @@ function Dashboard() {
       </div>
       <a href="/users">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-          Usuarios
+          <div className="flex items-center gap-3">
+            <FontAwesomeIcon icon={faUser} />
+            <p>Usuarios</p>
+          </div>
         </div>
       </a>
       <a href="/users">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-          Denuncias
+          <div className="flex items-center gap-3">
+            <FontAwesomeIcon icon={faExclamation} className="bg-white rounded-full text-black size-4" />
+            <p>Denuncias</p>
+          </div>
         </div>
       </a>
       <a href="/users">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-          Notas pizarra
+        <div className="flex items-center gap-3">
+            <FontAwesomeIcon icon={faPaperclip} />
+            <p>Notas pizarra</p>
+          </div>
         </div>
       </a>
     </div>
