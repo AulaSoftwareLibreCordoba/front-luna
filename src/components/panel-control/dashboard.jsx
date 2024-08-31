@@ -17,7 +17,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="flex flex-col bg-[#0f0c29] w-64 h-screen">
+    <div className="flex-col bg-[#0f0c29] w-64 h-screen overflow-y-hidden hidden md:flex">
       <div className="flex flex-col items-center">
         <div className="text-center mt-5 p-10 text-white bg-[#0f0c29] w-12 h-12 flex items-center justify-center ease-in-out">
           <div className="text-white">
@@ -25,18 +25,26 @@ function Dashboard() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="my-auto ">
         <a href="/users">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
             <div className="flex items-center gap-5 m-3 text-xl">
               <FontAwesomeIcon icon={faUser} className="size-7" />
+=======
+      <div className="my-auto mt-[2rem] md:mt-[9rem] lg:mt-[9rem] xl:mt-[15rem]">
+        <a href="/users">
+          <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
+            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
+              <FontAwesomeIcon icon={faUser} className="size-7"/>
+>>>>>>> 6c4d2d0bc2b98df94cd3c5ba914bcdaa1cb79360
               <p>Usuarios</p>
             </div>
           </div>
         </a>
         <a href="/denuncias-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-            <div className="flex items-center gap-5 m-3 text-xl">
+            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
               <FontAwesomeIcon icon={faCircleExclamation} className="size-7" />
               <p>Denuncias</p>
             </div>
@@ -44,7 +52,11 @@ function Dashboard() {
         </a>
         <a href="/notas-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
+<<<<<<< HEAD
             <div className="flex items-center gap-5 m-3 text-xl">
+=======
+          <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
+>>>>>>> 6c4d2d0bc2b98df94cd3c5ba914bcdaa1cb79360
               <FontAwesomeIcon icon={faClipboard} className="size-7" />
               <p>Notas pizarra</p>
             </div>

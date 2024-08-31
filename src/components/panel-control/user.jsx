@@ -9,21 +9,23 @@ function User({ nombre, id, email }) {
 
   return (
     <div
-      className={`${backgroundColor} border border-inherit flex flex-row p-4 text-center box-border w-full mb-0 items-center`}
+      className={`${backgroundColor} border border-inherit flex flex-row p-4 text-start box-border w-full mb-0  justify-between items-center`}
     >
-      <div className="flex-1">
-        <p>{id}</p>
+      <div>
+        <div className="flex gap-2">
+          <p className="font-bold">Usuario: </p><p>{id}</p>
+        </div>
+        <div className="flex gap-2">
+          <p className="font-bold">Nombre: </p><p>{nombre}</p>
+        </div>
+        {/* <div className="flex gap-2-1">
+          <p className="font-bold">{apellidos}</p>
+        </div> */}
+        <div className="flex gap-2">
+          <p className="font-bold">Email: </p><p>{email}</p>
+        </div>
       </div>
-      <div className="flex-1">
-        <p>{nombre}</p>
-      </div>
-      {/* <div className="flex-1">
-        <p>{apellidos}</p>
-      </div> */}
-      <div className="flex-1">
-        <p>{email}</p>
-      </div>
-      <div className="flex gap-3">
+      <div className="grid gap-2 md:flex">
         <div>
           <button
             id={`${id}`}
