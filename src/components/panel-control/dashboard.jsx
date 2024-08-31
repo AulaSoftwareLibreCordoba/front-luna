@@ -51,7 +51,7 @@ function Dashboard() {
           </div>
         </a>
       </div>
-      <div className="p-10">
+      <div className="p-16">
         <div className="mx-auto text-center p-4 text-white bg-red-800 hover:bg-red-900 rounded-full size-14 flex items-center justify-center transition-colors duration-300 ease-in-out">
           <a href="/">
             <div className="text-white hover:rounded-full cursor-pointer size-7">
