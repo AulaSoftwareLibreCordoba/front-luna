@@ -4,8 +4,8 @@ import edituser from "./edituser";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faExclamation } from '@fortawesome/free-solid-svg-icons';
-import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 
 
 function Dashboard() {
@@ -37,15 +37,15 @@ function Dashboard() {
       <a href="/denuncias-dash">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
           <div className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faExclamation} className="bg-white rounded-full text-black size-4" />
+            <FontAwesomeIcon icon={faCircleExclamation} className="size-4" />
             <p>Denuncias</p>
           </div>
         </div>
       </a>
-      <a href="/users">
+      <a href="/notas-dash">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
         <div className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faPaperclip} className="size-4" />
+            <FontAwesomeIcon icon={faClipboard} className="size-4" />
             <p>Notas pizarra</p>
           </div>
         </div>
