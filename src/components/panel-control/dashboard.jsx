@@ -34,7 +34,7 @@ function Dashboard() {
           </div>
         </div>
       </a>
-      <a href="/users">
+      <a href="/denuncias-dash">
         <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
           <div className="flex items-center gap-3">
             <FontAwesomeIcon icon={faExclamation} className="bg-white rounded-full text-black size-4" />
