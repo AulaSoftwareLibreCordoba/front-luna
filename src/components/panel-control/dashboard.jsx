@@ -25,19 +25,11 @@ function Dashboard() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="my-auto ">
+      <div className="my-auto">
         <a href="/users">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
             <div className="flex items-center gap-5 m-3 text-xl">
               <FontAwesomeIcon icon={faUser} className="size-7" />
-=======
-      <div className="my-auto mt-[2rem] md:mt-[9rem] lg:mt-[9rem] xl:mt-[15rem]">
-        <a href="/users">
-          <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
-              <FontAwesomeIcon icon={faUser} className="size-7"/>
->>>>>>> 6c4d2d0bc2b98df94cd3c5ba914bcdaa1cb79360
               <p>Usuarios</p>
             </div>
           </div>
@@ -52,11 +44,7 @@ function Dashboard() {
         </a>
         <a href="/notas-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-<<<<<<< HEAD
-            <div className="flex items-center gap-5 m-3 text-xl">
-=======
-          <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
->>>>>>> 6c4d2d0bc2b98df94cd3c5ba914bcdaa1cb79360
+            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
               <FontAwesomeIcon icon={faClipboard} className="size-7" />
               <p>Notas pizarra</p>
             </div>
@@ -64,7 +52,7 @@ function Dashboard() {
         </a>
       </div>
       <div className="p-10">
-        <div className="mx-auto text-center p-4 text-white  bg-red-800  hover:bg-red-900 rounded-full size-14 flex items-center justify-center transition-colors duration-300 ease-in-out">
+        <div className="mx-auto text-center p-4 text-white bg-red-800 hover:bg-red-900 rounded-full size-14 flex items-center justify-center transition-colors duration-300 ease-in-out">
           <a href="/">
             <div className="text-white hover:rounded-full cursor-pointer size-7">
               <FontAwesomeIcon icon={faSignOut} className="size-7" />
