@@ -19,7 +19,7 @@ function Edituser({ nombre, id, email }) {
           <FontAwesomeIcon icon={faPlus} className="size-4" />
         </button>
       </div>
-      <div className="flex-1 p-4 overflow-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-300">
+      <div className="flex-1 p-4 overflow-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-300 jus">
 
         {nombre.map((nombres, index) => (
           <User
