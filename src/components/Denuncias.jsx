@@ -20,7 +20,6 @@ const FormComponent = () => {
   const handleSubmitLogin = (e) => {
     e.preventDefault();
 
-    // usamos el post registramos el headers el cual incluye el token y pasamos al body los valores de id...
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -29,18 +28,25 @@ const FormComponent = () => {
         resumen: reason,
         fechaCreacion: selectedClass,
         validado: '1',
+        activado: 'SI',
+        denuncias: []
       })
     };
 
     fetch('http://5.196.26.7:8080/denuncias', requestOptions)
-      .then(response => response.json())
+      .then(response => {
+        console.log('Status:', response.status); // Verifica el código de estado
+        return response.json();
+      })
       .then(result => {
-        console.log(result);
+        console.log('Success:', result);
         // Redirige a la página especificada después de recibir la respuesta
         window.location.assign("/pizarra");
       })
-      .catch(error => console.error('Error:', error));
-  };
+      .catch(error => {
+        console.error('Error:', error);
+      });
+};
 
   return (
     <form
