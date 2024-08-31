@@ -6,10 +6,10 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Edituser({ nombre, id, email }) {
   return (
-    <div className="flex flex-col bg-[#ffff] w-screen h-screen justify-between">
+    <div className="flex flex-col bg-[#ffff] w-screen h-screen justify-between text-xs">
 
-      <div className="flex flex-row bg-[19a689] p-4 pb-0 pr-8 text-center justify-end">
-        <div className="mx-auto font-bold text-4xl items-center gap-3 flex">
+      <div className="flex flex-row bg-[19a689] pb-0 pr-4 text-center justify-end items-center">
+        <div className="mx-auto p-auto font-bold text-4xl items-center gap-3 flex p-4">
           <FontAwesomeIcon icon={faUser} className="text-[#0f0c29] size-9 " />
           <h1 className="text-[#0f0c29] font-bold underline">USUARIOS</h1>
         </div>
@@ -19,7 +19,7 @@ function Edituser({ nombre, id, email }) {
           <FontAwesomeIcon icon={faPlus} className="size-4" />
         </button>
       </div>
-      <div className="flex-1 p-4 overflow-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-300 jus">
+      <div className="flex-auto">
 
         {nombre.map((nombres, index) => (
           <User
