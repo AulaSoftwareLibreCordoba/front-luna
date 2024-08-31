@@ -11,18 +11,18 @@ function User({ nombre, id, email }) {
     <div
       className={`${backgroundColor} border border-inherit flex flex-row p-4 text-start box-border w-full mb-0  justify-between items-center`}
     >
-      <div>
+      <div className="md:flex md:gap-10 lg:gap-40 xl:gap-80">
         <div className="flex gap-2">
-          <p className="font-bold">Usuario: </p><p>{id}</p>
+          <p className="font-bold md:hidden">Usuario: </p><p>{id}</p>
         </div>
         <div className="flex gap-2">
-          <p className="font-bold">Nombre: </p><p>{nombre}</p>
+          <p className="font-bold md:hidden">Nombre: </p><p>{nombre}</p>
         </div>
         {/* <div className="flex gap-2-1">
-          <p className="font-bold">{apellidos}</p>
+          <p className="font-bold md:hidden">{apellidos}</p>
         </div> */}
         <div className="flex gap-2">
-          <p className="font-bold">Email: </p><p>{email}</p>
+          <p className="font-bold md:hidden">Email: </p><p>{email}</p>
         </div>
       </div>
       <div className="grid gap-2 md:flex">

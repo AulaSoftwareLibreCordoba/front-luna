@@ -17,7 +17,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="flex-col bg-[#0f0c29] w-64 h-screen overflow-y-hidden hidden md:flex">
+    <div className="flex-col bg-[#0f0c29] h-screen overflow-y-hidden flex md:flex md:w-80">
       <div className="flex flex-col items-center">
         <div className="text-center mt-5 p-10 text-white bg-[#0f0c29] w-12 h-12 flex items-center justify-center ease-in-out">
           <div className="text-white">
@@ -25,28 +25,28 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="my-auto">
+      <div className="my-auto ">
         <a href="/users">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-            <div className="flex items-center gap-5 m-3 text-xl">
+            <div className="flex items-center text-center md:m-3 mdtext-xl">
               <FontAwesomeIcon icon={faUser} className="size-7" />
-              <p>Usuarios</p>
+              <p class="mx-auto font-bold text-lg">Usuarios</p>
             </div>
           </div>
         </a>
         <a href="/denuncias-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
+            <div className="flex items-center text-center text-md md:m-3 md:text-xl">
               <FontAwesomeIcon icon={faCircleExclamation} className="size-7" />
-              <p>Denuncias</p>
+              <p class="mx-auto font-bold text-lg">Denuncias</p>
             </div>
           </div>
         </a>
         <a href="/notas-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
-            <div className="flex items-center gap-5 text-md md:m-3 md:text-xl">
+            <div className="flex items-center text-center text-md md:m-3 md:text-xl">
               <FontAwesomeIcon icon={faClipboard} className="size-7" />
-              <p>Notas pizarra</p>
+              <p class="mx-auto font-bold text-lg">Notas pizarra</p>
             </div>
           </div>
         </a>

@@ -7,7 +7,9 @@ import AddNotasPanel from '../components/panel-control/addNotasPanel.astro';
 
 <Layout title="Panel de control - Notas Pizarra">
   <div class="flex flex-row">
-    <Dashboard />
+    <div class="hidden md:flex">
+      <Dashboard />
+    </div>
     <AddNotasPanel />
   </div>
 </Layout>

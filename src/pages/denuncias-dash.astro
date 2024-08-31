@@ -7,7 +7,9 @@ import EditarDenuncias from '../components/panel-control/editarDenuncias.astro';
 
 <Layout title="Panel de control - Deuncias">
   <div class="flex flex-row">
-    <Dashboard />
+    <div class="hidden md:flex">
+      <Dashboard />
+    </div>
     <EditarDenuncias />
   </div>
 </Layout>
