@@ -21,11 +21,6 @@ function Edituser({ nombre, id, email }) {
           <FontAwesomeIcon icon={faUser} className="text-[#0f0c29] size-5 md:size-8" />
           <h1 className="text-[#0f0c29] mr-5 font-bold underline text-lg md:text-2xl">USUARIOS</h1>
         </div>
-        <button
-          class="flex justify-center items-center w-10 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#51df7b] via-[#0bc467] to-[#049c55] hover:shadow-sm hover:shadow-green-400 hover:scale-105 duration-300 hover:from-[#3ebd73] hover:to-[#32d468]"
-        >
-          <FontAwesomeIcon icon={faPlus} className="size-4" />
-        </button>
       </div>
       <div className="flex-auto">
 
@@ -34,7 +29,7 @@ function Edituser({ nombre, id, email }) {
             key={id[index]}
             nombre={nombres}
             id={index}
-            email={email[index]}
+            email={email[index]}  
           />
         ))}
       </div>

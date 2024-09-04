@@ -17,7 +17,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="flex-col bg-[#0f0c29] h-screen overflow-y-hidden flex md:flex md:w-80">
+    <div className="flex-col bg-[#0f0c29] h-screen scroll-my-0 flex md:flex md:w-80">
       <div className="flex flex-col items-center">
         <div className="text-center mt-5 p-10 text-white bg-[#0f0c29] w-12 h-12 flex items-center justify-center ease-in-out">
           <div className="text-white">

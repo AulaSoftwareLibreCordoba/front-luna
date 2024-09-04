@@ -11,7 +11,7 @@ function User({ nombre, id, email }) {
     <div
       className={`${backgroundColor} border border-inherit flex flex-row p-4 text-start box-border w-full mb-0  justify-between items-center`}
     >
-      <div className="md:flex md:gap-10 lg:gap-40 xl:gap-80">
+      <div className="md:flex">
         <div className="flex gap-2">
           <p className="font-bold md:hidden">Usuario: </p><p>{id}</p>
         </div>
