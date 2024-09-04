@@ -25,7 +25,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="my-auto ">
+      <div className="h-screen">
         <a href="/users">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
             <div className="flex items-center text-center md:m-3 mdtext-xl">
