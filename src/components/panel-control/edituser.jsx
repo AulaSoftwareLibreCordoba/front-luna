@@ -19,7 +19,7 @@ function Edituser({ nombre, id, email }) {
         <div className="mx-auto p-auto font-bold text-4xl items-center gap-3 flex p-4">
           
           <FontAwesomeIcon icon={faUser} className="text-[#0f0c29] size-5 md:size-8" />
-          <h1 className="text-[#0f0c29] mr-5 font-bold underline text-lg md:text-2xl">USUARIOS</h1>
+          <h1 className="text-[#0f0c29] p-4 mr-5 font-bold underline text-lg md:text-2xl">USUARIOS</h1>
         </div>
       </div>
       <div className="flex-auto">
