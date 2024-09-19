@@ -1,10 +1,67 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShieldHalved, faHandshakeAngle, faComments } from '@fortawesome/free-solid-svg-icons';
 ---
 
-<Layout title="Luna - Inicio">
-  <h1 class="text-[3rem] text-center p-3 m-2">Bienvenido</h1>
-  <hr class="w-[30%] mx-auto border-violet-600">
+<Layout title="Luna - Información">
+  <main class="text-center">
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-6 texto-pizarra">Bienvenido a Luna</h1>
+        <p class="text-xl mb-12 max-w-2xl mx-auto texto-general">
+          Luna es tu aliado en la lucha contra el acoso escolar. Juntos, creamos un entorno educativo más seguro y amigable.
+        </p>
+        <a href="/refugio" class="feature bg-violet-900 text-white font-bold py-3 px-6 rounded-full hover:bg-violet-700 transition duration-500 ease-in-out">
+          Accede a tu refugio
+        </a>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-12 texto-pizarra">¿Qué ofrecemos?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="feature bg-violet-900 p-6 rounded-lg shadow-lg text-center ease-in-out">
+            <div class="flex items-center justify-center mb-4">
+              <FontAwesomeIcon icon={faShieldHalved} className="text-white text-4xl mr-4 size-8" />
+              <h3 class="text-2xl font-semibold text-white">Protección</h3>
+            </div>
+            <p class="text-white">Ofrecemos un espacio seguro para denunciar de manera anónima y prevenir el acoso escolar.</p>
+          </div>
+          <div class="feature bg-violet-900 p-6 rounded-lg shadow-lg text-center ease-in-out">
+            <div class="flex items-center justify-center mb-4">
+              <FontAwesomeIcon icon={faHandshakeAngle} className="text-white text-4xl mr-4 size-8" />
+              <h3 class="text-2xl font-semibold text-white">Apoyo</h3>
+            </div>
+            <p class="text-white">Brindamos ayuda y recursos para estudiantes, padres y educadores y aseguramos la protección de los menores.</p>
+          </div>
+          <div class="feature bg-violet-900 p-6 rounded-lg shadow-lg text-center ease-in-out">
+            <div class="flex items-center justify-center mb-4">
+              <FontAwesomeIcon icon={faComments} className="text-white text-4xl mr-4 size-8" />
+              <h3 class="text-2xl font-semibold text-white">Comunicación</h3>
+            </div>
+            <p class="text-white">Facilitamos el diálogo abierto y la resolución de conflictos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-6 texto-pizarra">¿Cómo funciona?</h2>
+        <p class="text-xl mb-12 max-w-2xl mx-auto texto-general">
+          Luna proporciona una plataforma fácil de usar para reportar incidentes, acceder a noticias e información relevante y recibir apoyo.
+        </p>
+        <div class="flex justify-center flex-wrap gap-4">
+          <a href="/pizarra" class="feature bg-violet-900 text-white font-bold py-3 px-6 rounded-full hover:bg-violet-700 transition duration-500 ease-in-out">
+            Ver pizarra
+          </a>
+          <a href="/refugio" class="feature bg-violet-900 text-white font-bold py-3 px-6 rounded-full hover:bg-violet-700 transition duration-500 ease-in-out">
+            Ir a mi refugio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

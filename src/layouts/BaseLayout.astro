@@ -30,7 +30,7 @@ const { title, description } = Astro.props;
 		</div>
 
 		<script>
-			// Add “loaded” class once the document has completely loaded.
+			// Add "loaded" class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>
 
@@ -43,6 +43,9 @@ const { title, description } = Astro.props;
 				.texto-pizarra{
 					color: black;
 				}	
+				.texto-general {
+					color: #333333;
+				}
 
 				.backg {
 					background: -webkit-linear-gradient(90deg, #efc3e6,#dee2ff,#feeafa);
@@ -72,6 +75,19 @@ const { title, description } = Astro.props;
 					}
 				}
 
+				.feature {
+					background: #b388dd;
+					cursor: pointer;
+					transition: all 0.4s;
+					-webkit-transition: all 0.4s;
+					-moz-transition: all 0.4s;
+					-ms-transition: all 0.4s;
+					-o-transition: all 0.4s;
+				}
+
+				.feature:hover {
+					background: #9269bc;
+				}
 
 				.navbar__link {
 					color: #373737;
@@ -114,7 +130,10 @@ const { title, description } = Astro.props;
 				}
 
 				.texto-pizarra{
-					color: white
+					color: white;
+				}
+				.texto-general {
+					color: #e0e0e0;
 				}
 
 				select {
@@ -137,6 +156,22 @@ const { title, description } = Astro.props;
 						.menu-footer {
 						background: transparent;
 					}
+				}
+
+				.feature {
+					background: #7611a6;
+					cursor: pointer;
+				}
+
+				.feature {
+					transition: all 0.4s;
+					-webkit-transition: all 0.4s;
+					-moz-transition: all 0.4s;
+					-ms-transition: all 0.4s;
+					-o-transition: all 0.4s;
+				}
+				.feature:hover {
+					background: #5d0d82;
 				}
 
 
