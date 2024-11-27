@@ -1,15 +1,5 @@
 ---
-import Cards from './cards';
-
-// const limit = 10;
-// const response = await fetch(`http://5.196.26.7:8080/dashboardpizarra?limit=${limit}`, {
-//     method: "GET",
-//     headers: {
-//         "Content-Type": "application/json",
-//     },
-// });
-// const {content :users} = await response.json() as DataAPI;
-// console.log(users);
+import Cards from './Card';
 
 ---
 
@@ -24,12 +14,6 @@ import Cards from './cards';
             <Cards id={''} text={'Sin detalles'} success={''} nombre={'Titulo'} />
             <Cards id={''} text={'Sin detalles'} success={''} nombre={'Titulo'} />
             <Cards id={''} text={'Sin detalles'} success={''} nombre={'Titulo'} />
-            
-            <!-- {
-                // users.map((user) => (
-                //     user.activo == null ? '' : <Cards id={user.id} text={user.texto || 'Sin detalles'} success={user.activo} nombre={user.nombre} />
-                ))
-            } -->
         </div>
     </div>
 </div>
