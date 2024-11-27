@@ -1,0 +1,18 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar dist
+dist/
+
+# Ignorar .astro
+.astro/
+
+# Ignorar configuración de VSCode
+.vscode/
+
+# Otras carpetas/archivos temporales
+*.log
+.DS_Store
+.env
+
+.netlify/
